@@ -16,6 +16,5 @@ class VideoController extends Controller
         $url = $this->youtubeService->getVideoURL();
 
         $this->slackService->sendSlackMessage($url);
-        dd('送信済み');
     }
 }
