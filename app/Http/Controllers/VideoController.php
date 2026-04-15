@@ -10,9 +10,11 @@ class VideoController extends Controller
     public function __construct(
         private YoutubeService $youtubeService,
         private SlackService $slackService,
-    ){}
+    ) {
+    }
 
-    public function notify():void {
+    public function notify(): void
+    {
         $url = $this->youtubeService->getVideoURL();
 
         $this->slackService->sendSlackMessage($url);
