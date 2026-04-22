@@ -2,4 +2,6 @@
 
 namespace App\Exceptions;
 
-class SlackApiException extends \RuntimeException {}
+class SlackApiException extends \RuntimeException
+{
+}

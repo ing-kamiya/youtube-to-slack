@@ -2,4 +2,6 @@
 
 namespace App\Exceptions;
 
-class YouTubeApiException extends \RuntimeException {}
+class YouTubeApiException extends \RuntimeException
+{
+}
